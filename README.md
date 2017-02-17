@@ -13,7 +13,8 @@ will not include this file.
 
 ## Using the prototyping kit
 
-To use the prototype kit, users will [download it](https://github.com/tekin/prototype-kit-proof-of-concept/archive/master.zip)
+To use the prototype kit, users will
+[download it](https://github.com/coopdigital/prototype-kit-proof-of-concept/releases/download/0.1.0/prototype-kit.zip)
 and open the GETTING-STARTED.html file on their computer.
 
 ## Principles
