@@ -1,0 +1,14 @@
+article.example {
+  border: 1px solid #c4c4c4;
+  padding: 10px;
+  margin-bottom: 32px
+}
+.example-heading {
+  background: #f3f3f3;
+  padding: .25em;
+}
+
+textarea.code {
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-size: 12px;
+}
