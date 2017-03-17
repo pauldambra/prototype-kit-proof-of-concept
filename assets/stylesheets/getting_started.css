@@ -3,12 +3,74 @@ article.example {
   padding: 10px;
   margin-bottom: 32px
 }
+
 .example-heading {
   background: #f3f3f3;
   padding: .25em;
 }
 
-textarea.code {
+textarea.code,
+pre {
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   font-size: 12px;
 }
+
+pre {
+  background: #eff0f1;
+  padding: 1em .85em 0;
+  margin-top: 5px;
+}
+
+.example-panel {
+  position: relative;
+  border: 1px solid #c4c4c4;
+  padding: 40px 20px 10px;
+}
+
+.example-panel:before {
+  background: #eff0f1;
+  font-size: .75em;
+  text-transform: uppercase;
+  content :  'Example';
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+
+
+/* form examples css */
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline-block;
+    font-size: 1.25em;
+    margin: -2px 1em 0em .25em;
+    vertical-align: top;
+    max-width: 90%;
+}
+
+.dob-fields label {
+  font-size: 1.25em;
+}
+
+.block-label>input[type="radio"] + .input-toggle-content,
+input[type="radio"] + label + .input-toggle-content {
+  display: none;
+  height: 0;
+  opacity: 0;
+  transition: all  1s ease-in-out;
+}
+.block-label>input[type="radio"]:checked + .input-toggle-content,
+input[type="radio"]:checked + label + .input-toggle-content {
+  display: block;
+  height: auto;
+  opacity: 1;
+}
+
+/**/

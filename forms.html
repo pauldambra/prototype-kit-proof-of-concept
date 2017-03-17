@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Co-op Prototyping kit</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/getting_started.css">
+  </head>
+  <body>
+    <nav class="skip-nav">
+      <ul>
+        <li><a href="#main" title="Skip to main content">Skip to content</a></li>
+      </ul>
+    </nav>
+    <div class="app-content">
+      <div class="content-wrapper">
+        <header class="wrap header-main header-design-manual">
+          <a class="coop-logo" aria-label="Homepage" href="index.html">
+            <img src="assets/images/logos/coop-logo.svg" alt="Co-op">
+          </a>
+        </header>
+        <main id="main" class="main wrap">
+          <header>
+            <h1 id="form-elements">Form Elements</h1>
+             <p>
+                <ul>
+                  <h3 class="h4">Inputs</h3>
+                  <li>
+                    <a href="#input-text">Text input</a>
+                  </li>
+                  <li>
+                    <a href="#input-password">Password input</a>
+                  </li>
+                  <li>
+                    <a href="#input-email">Email input</a>
+                  </li>
+                  <li>
+                    <a href="#input-number">Number input</a>
+                  </li>
+                <!--   <li>
+                    <a href="#input-file">File input</a>
+                  </li> -->
+                  <li>
+                    <a href="#input-tel">Telephone input</a>
+                  </li>
+                  <br>
+
+                  <h3 class="h4">Selections</h3>
+                  <li>
+                    <a href="#selection-checkbox">Checkboxes</a>
+                  </li>
+                  <li>
+                    <a href="#selection-radio">Radio buttons</a>
+                  </li>
+                  <li>
+                    <a href="#selection-dropdown">Select dropdowns</a>
+                  </li>
+                  <li>
+                    <a href="#selection-dropdown">Tap buttons</a>
+                  </li>
+                </ul>
+              </p>
+          </header>
+
+
+            <section id="input-examples" class="row margin-bh">
+
+              <header>
+                <h3 class="h2">Inputs</h3>
+              </header>
+
+
+              <article id="inputs-text"  class="column medium-7 margin-bh">
+                <h4 id="input-text"><span class="example-heading">Text input</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="text-field">Enter text <em>e.g. Name</em></label>
+                    <input type="text" id="text-field">
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="text-input-example"&gt;Enter text &lt;em&gt;e.g. Name&lt;/em&gt;&lt;/label&gt;
+  &lt;input type="text" id="text-input-example"&gt;
+&lt;/div&gt;</pre>
+              </article>
+
+
+              <article id="inputs-password"  class="column medium-7 margin-bh">
+                <h4 id="input-password"><span class="example-heading">Password input</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="password-input-example">Enter your password</label>
+                    <input type="password" id="password-input-example">
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="password-input-example"&gt;Enter your passsword&lt;/label&gt;
+  &lt;input type="password" id="password-input-example"&gt;
+&lt;/div&gt; </pre>
+              </article>
+
+
+              <article id="inputs-email"  class="column medium-7 margin-bh">
+                <h4 id="input-email"><span class="example-heading">Email input</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="email-input-example">Enter email</label>
+                    <input type="email" id="email-input-example">
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="email-input-example"&gt;Enter email&lt;/label&gt;
+  &lt;input type="email" id="email-input-example"&gt;
+&lt;/div&gt;</pre>
+              </article>
+
+
+              <article id="inputs-number"  class="column medium-7 margin-bh">
+                <h4 id="input-number"><span class="example-heading">Number input</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="number-field-example">Enter a number</label>
+                    <input type="number" id="number-field-example">
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="number-input-example"&gt;Enter a number&lt;/label&gt;
+  &lt;input type="number" id="number-input-example"&gt;
+&lt;/div&gt;</pre>
+              </article>
+
+
+              <!-- <article id="inputs-file"  class="column medium-7 margin-bh">
+                <h4 id="input-file"><span class="example-heading">File input</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="file-input-example">Upload a file</label>
+                    <input type="file" id="file-input-example">
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="date-input-example"&gt;Enter a number&lt;/label&gt;
+  &lt;input type="date" id="date-input-example"&gt;
+&lt;/div&gt; </pre>
+              </article> -->
+
+
+              <article id="inputs-tel" class="column medium-7  margin-bh">
+                <h4 id="input-tel"><span class="example-heading">Telephone input</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="tel-input-example">Enter Telephone number</label>
+                    <input type="telephone" id="tel-input-example">
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="tel-input-example"&gt;Your telephone number&lt;/label&gt;
+  &lt;input type="tel" id="tel-input-example"&gt;
+&lt;/div&gt;</pre>
+              </article>
+
+
+              <article id="inputs-textarea"  class="column medium-7 ">
+                <h4 id="input-textarea"><span class="example-heading">Textarea</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="textarea-example">Tell us what's wrong</label>
+                    <textarea id="textarea-example" cols="30" rows="4"></textarea>
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="inputs-textarea"&gt;Your telephone number&lt;/label&gt;
+  &lt;textarea id="inputs-textarea" cols="30" rows="10"&gt; &lt;/textarea&gt;
+&lt;/div&gt;</pre>
+              </article>
+              <footer>
+                <a href="#form-elements">Back to top</a>
+              </footer>
+            </section>
+
+
+            <section id="selection-examples" class="row margin-bh">
+              <header><h3 class="h2">Selections</h3></header>
+
+              <article class="column medium-7 margin-bh">
+                <h4 id="selection-checkbox"><span class="example-heading">Checkboxes <small>(block-labels)</small></span></h4>
+                <div class="example-panel">
+                  <fieldset>
+                    <legend>Select all that apply</legend>
+                    <div class="form-row">
+                      <label for="box1" class="block-label"><input class="input-inline" id="box1" type="checkbox"> Choice 1 </label>
+                    </div>
+                    <div class="form-row">
+                      <label for="box2" class="block-label"><input class="input-inline" id="box2" type="checkbox"> Choice 2 </label>
+                    </div>
+                    <div class="form-row">
+                      <label class="block-label" for="box3"><input class="input-inline" id="box3" type="checkbox"> Choice 3 </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <pre>
+
+
+                </pre>
+              </article>
+
+              <article class="column medium-7 margin-bh">
+                <h4 id="selection-radio"><span class="example-heading">Radio buttons basic</span></h4>
+                <div class="example-panel">
+                  <fieldset>
+                    <legend>Select Gender</legend>
+                    <div class="form-row">
+                      <input type="radio" name="gender" value="male">
+                      <label>Male</label>
+                    </div>
+                    <div class="form-row">
+                      <input type="radio" name="gender" value="female">
+                      <label >Female</label>
+                    </div>
+                  </fieldset>
+                </div>
+                <pre>
+
+
+                </pre>
+              </article>
+
+
+              <article class="column medium-7 margin-bh">
+                <h4 id="selection-radio"><span class="example-heading">Radio buttons inline</span></h4>
+                <div class="example-panel">
+                  <fieldset>
+                    <legend>Select Gender</legend>
+                    <div class="form-row">
+                      <input  type="radio" name="gender" value="male">
+                      <label >Male</label>
+                      <input  type="radio" name="gender" value="female">
+                      <label >Female</label>
+                    </div>
+                  </fieldset>
+
+                </div>
+                <pre>
+
+                </pre>
+
+              </article>
+
+
+              <article class="column medium-7 margin-bh">
+                <h4 id="selection-radio-block"><span class="example-heading">Radio buttons block labels</span></h4>
+                <div class="example-panel">
+                  <fieldset>
+                    <legend>Select Gender</legend>
+                    <div class="form-row">
+                      <label for="male-block" class="block-label">
+                        <input id="male-block" class="input-inline" type="radio" name="gender-block" value="male">
+                        Male
+                      </label>
+                      <label for="female-block" class="block-label">
+                        <input id="female-block" class="input-inline" type="radio" name="gender-block" value="female">
+                        Female
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <pre>&lt;fieldset&gt;
+  &lt;legend&gt;Select Gender&lt;/legend&gt;
+  &lt;div class="form-row"&gt;
+    &lt;label for="" class="block-label"&gt;
+      &lt;input id="" class="input-inline" type="radio" name="gender-block" value=""&gt;
+      Male
+    &lt;/label&gt;
+    &lt;label for="" class="block-label"&gt;
+      &lt;input id="" class="input-inline" type="radio" name="gender-block" value=""&gt;
+      Female
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
+              </article>
+
+              <article id="selection-dropdown" class="column medium-7 margin-bh">
+                <h4 id="selection-dropdown"><span class="example-heading">Select dropdown</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="select-example">Select an option</label>
+                    <select id="select-example" name="select-example">
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                      <option value="4">Option 4</option>
+                    </select>
+                  </div>
+                </div>
+                <pre>
+
+                </pre>
+              </article>
+
+              <article id="selection-tap" class="column medium-7 ">
+                <h4 id="selection-tap"><span class="example-heading">Tap input</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <fieldset>
+                      <legend>Was this page helpful?</legend>
+                      <input class="tap-input" id="tap-yes" name="tap-example-1" type="radio"> <label for="tap-yes">Yes</label>
+                      <input class="tap-input" id="tap-no" name="tap-example-1" type="radio"> <label for="tap-no">No</label>
+                    </fieldset>
+                  </div>
+                </div>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Was this page helpful?&lt;/legend&gt;
+    &lt;input class="tap-input" id="tap-yes" name="tap-example-1" type="radio"&gt; &lt;label for="tap-yes"&gt;Yes&lt;/label&gt;
+    &lt;input class="tap-input" id="tap-no" name="tap-example-1" type="radio"&gt; &lt;label for="tap-no"&gt;No&lt;/label&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+              </article>
+
+
+              <article id="selection-dropdown" class="column medium-7 margin-bh">
+                <h4 id="selection-checkbox"><span class="example-heading">Select dropdown</span></h4>
+                <div class="example-panel">
+                  <div class="form-row">
+                    <label for="select-example">Select an option</label>
+                    <select id="select-example" name="select-example">
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                      <option value="4">Option 4</option>
+                    </select>
+                  </div>
+                </div>
+                <pre>
+
+                </pre>
+              </article>
+
+              <footer>
+                <a href="#form-elements">Back to top</a>
+              </footer>
+            </section>
+
+
+
+            <section class="row margin-b">
+              <header><h3 class="h2">Form Examples</h3></header>
+              <!--
+                * Name - full name / title, first name, lastname
+                * Login
+                * Subscribe ??
+                * Feedback
+                * CSS only hide/reveal radio??
+                * Inline form elements layout  -  label : input : submit
+              -->
+
+              <article id="" class="column medium-7 margin-bh">
+                <h4 id="login-form"><span class="example-heading">Login form</span></h4>
+                <!-- example -->
+                <div class="example-panel">
+                  <form>
+                    <fieldset>
+                      <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                      </div>
+                      <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                      </div>
+                      <div class="form-row">
+                        <a href="#login" class="btn btn-primary">Sign in</a>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <!-- //example -->
+                <pre>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;div class="form-row"&gt;
+      &lt;label for="email"&gt;Email&lt;/label&gt;
+      &lt;input type="email" id="email"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+      &lt;label for="password"&gt;Password&lt;/label&gt;
+      &lt;input type="password" id="password"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+      &lt;a href="#login" class="btn btn-primary"&gt;Sign in&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+              </article>
+
+
+              <article id="" class="column medium-7 margin-bh">
+                <h4 id="dob-form"><span class="example-heading">Date of birth input <small>(using the grid to set input&nbsp;widths)</small></span></h4>
+                <div class="example-panel">
+                  <form>
+                    <fieldset class="dob-fields">
+                      <legend>Please enter your date of birth</legend>
+                      <div class="form-row">
+                        <div class="row">
+                          <div class="column xsmall-4 small-2 medium-3 large-2">
+                            <label for="dob-date">Date</label>
+                            <input id="dob-date" type="text"  maxlength="2" size="2" value="" placeholder="DD" pattern="[0-9]*">
+                          </div>
+                          <div class="column xsmall-4 small-2 medium-3 large-2">
+                            <label for="dob-month">Month</label>
+                            <input id="dob-month" type="text"  maxlength="3" size="3" value="" placeholder="MM" pattern="[0-9]*">
+                          </div>
+                          <div class="column xsmall-4 small-3 medium-4 large-3">
+                            <label for="dob-year">Year</label>
+                            <input id="dob-year" type="text"  maxlength="4" size="4" value="" placeholder="YYYY" pattern="[0-9]*">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <pre>
+
+
+                </pre>
+              </article>
+
+              <!-- INSERT HERE DateOfBirth - adpative input widths e.g. wills.coop.uk d.o.b fields-->
+                <!-- example /-->
+                <!-- pre /-->
+              <!-- // INSERT HERE DateOfBirth-->
+
+
+              <article id="" class="column medium-7 margin-bh">
+                <h4 id="address-form"><span class="example-heading">Address Form</span></h4>
+                <div class="example-panel">
+                  <form action="">
+                    <fieldset>
+                      <div class="form-row">
+                        <label for="addr1-example">Address 1</label>
+                        <input id="addr1-example" type="text">
+                      </div>
+                      <div class="form-row">
+                        <label for="addr2-example">Address 2</label>
+                        <input id="addr2-example" type="text">
+                      </div>
+                      <div class="form-row">
+                        <label for="town-example">Town</label>
+                        <input id="town-example" type="text">
+                      </div>
+                      <div class="form-row">
+                        <label for="country-example">County</label>
+                        <input id="country-example" type="text">
+                      </div>
+                      <div class="form-row">
+                        <label for="postcode-example" >Postcode</label>
+                        <input class="small-5" id="postcode-example" type="text">
+                      </div>
+                    </fieldset>
+                    <div class="form-row">
+                      <!-- using <a> tag over <button/> or input[type="submit"] to prevent actual submission -->
+                      <a class="btn btn-primary">Submit</a>
+                      <!-- // -->
+                    </div>
+                  </form>
+                </div>
+                <pre>
+
+
+                </pre>
+              </article>
+
+
+              <article id="" class="column medium-7 margin-bh">
+                <h4 id="address-form"><span class="example-heading">Feedback form example</span></h4>
+                <div class="example-panel">
+                  <form>
+                    <div class="form-row">
+                      <label for="feedback-text-example">Tell us what's wrong</label>
+                      <textarea name="" id="feedback-text-example column medium-7" cols="20" rows="4"></textarea>
+                    </div>
+                    <div class="form-row">
+                      <input class="btn btn-primary column small-4" type="submit" value="Send">
+                    </div>
+                  </form>
+                </div>
+                <pre>&lt;form action=""&gt;
+  &lt;div class="form-row"&gt;
+    &lt;label for="feedback-text-example"&gt;&lt;/label&gt;
+    &lt;textarea name="" id="feedback-text-example" cols="30" rows="4"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;div class="form-row"&gt;
+    &lt;input class="btn btn-primary column small-4dateo" type="submit" value="send"&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+              </article>
+
+
+              <article id="" class="column medium-7 margin-bh">
+                <h4 id="search-form"><span class="example-heading">Search form</span></h4>
+                <div class="example-panel">
+                  <form class="search-form">
+                    <div class="form-row">
+                      <label for="search-example" class="visuallyhidden" aria-role="hidden">Enter a search term</label>
+                      <input id="search-example" type="text" placeholder="Enter a search term">
+                      <button href="#" class="btn btn-primary">Search</button>
+                    </div>
+                  </form>
+                </div>
+                <pre>&lt;form class="search-form"&gt;
+  &lt;div class="form-row"&gt;
+    &lt;label for="search-example" class="visuallyhidden" aria-role="hidden"&gt;Enter a search term&lt;/label&gt;
+    &lt;input id="search-example" type="text" placeholder="enter search term"&gt;
+    &lt;button&gt;Search&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+              </article>
+
+
+              <article id="" class="column medium-7 margin-bh">
+                <h4 id="address-form"><span class="example-heading">Subscribe&ast; </span></h4>
+                <!-- example -->
+                <div class="example-panel">
+                  <form action="" class="">
+                    <fieldset>
+                      <legend>Subscribe and keep up to date with ours latest offers and&nbsp;news</legend>
+                      <label for="signup-email-example">Your email</label>
+                      <div class="form-row search-form">
+                        <input id="signup-email-example" type="email">
+                        <button class="btn btn-primary">Subscribe</button>
+                      </div>
+
+                      <div class="form-row">
+                        <input id="agree-example" class="input-inline" type="checkbox">
+                        <label for="agree-example">I would like to receive updates from other co-op services</label>
+                      </div>
+
+                   </fieldset>
+                  </form>
+                </div>
+                <!-- //example -->
+                <pre>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Subscribe and keep up to date with ours latest offers and&nbsp;news&lt;/legend&gt;
+    &lt;label for="signup-email-example"&gt;Your email&lt;/label&gt;
+    &lt;div class="form-row search-form"&gt;
+      &lt;input id="signup-email-example" type="email"&gt;
+      &lt;button class="btn btn-primary"&gt;Subscribe&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+      &lt;input id="agree-example" class="input-inline" type="checkbox"&gt;
+      &lt;label for="agree-example" style="display:inline-block"&gt;&lt;small&gt;I would like to receive updates from other co-op services&lt;/small&gt;&lt;/label&gt;
+    &lt;/div&gt;
+ &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+              </article>
+              <footer>
+                <a href="#form-elements">Back to top</a>
+              </footer>
+            </section>
+
+
+
+
+          <section>
+            <article id="radio-toggle" class="column medium-7 ">
+                <h4 id="radio-toggle"><span class="example-heading">Radio toggle example</span></h4>
+                <div class="example-panel">
+
+                    <fieldset>
+                      <legend>Do you have any children?</legend>
+                      <div class="form-row">
+                        <input class="" id="tap-yep" name="tap-example-1" type="radio">
+                        <label class="" for="tap-yep">Yes</label>
+                        <div class="input-toggle-content indented">
+                          <div class="form-row">
+                            <label for="input-toggle-feedback">Tell us what you liked</label>
+                            <textarea class="margin-bh" name="input-toggle-feedback" id="input-toggle-feedback" rows="4"></textarea>
+                          </div>
+                          <div class="form-row">
+                            <a href="#" class="btn btn-primary">Send Feedback</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <input id="tap-nope" name="tap-example-1" type="radio">
+                        <label for="tap-nope">No</label>
+                        <div class="input-toggle-content indented">
+                          <div class="form-row">
+                            <label for="input-toggle-feedback1">Tell us what you didn't like</label>
+                            <textarea name="input-toggle-feedback1" id="input-toggle-feedback1" rows="4"></textarea>
+                          </div>
+                          <div class="form-row">
+                            <a href="#" class="btn btn-primary">Send Feedback</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <input id="tap-nope" name="tap-example-1" type="radio">
+                        <label for="tap-nope">Discuss on call</label>
+                        <div class="input-toggle-content indented">
+                          <div class="form-row">
+                            <label for="input-toggle-feedback2">Tell us what you didn't like</label>
+                            <textarea name="" id="input-toggle-feedback2" rows="4"></textarea>
+                          </div>
+                          <div class="form-row">
+                            <a href="#" class="btn btn-primary">Send Feedback</a>
+                          </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+                <pre>
+
+
+                </pre>
+              </article>
+
+          </section>
+
+        </main>
+
+      </div>
+    </div>
+
+  </body>
+</html>
