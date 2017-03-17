@@ -201,10 +201,18 @@
                     </div>
                   </fieldset>
                 </div>
-                <pre>
-
-
-                </pre>
+                <pre>&lt;fieldset&gt;
+  &lt;legend&gt;Select all that apply&lt;/legend&gt;
+  &lt;div class="form-row"&gt;
+    &lt;label for="box1" class="block-label"&gt;&lt;input class="input-inline" id="box1" type="checkbox"&gt; Choice 1 &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="form-row"&gt;
+    &lt;label for="box2" class="block-label"&gt;&lt;input class="input-inline" id="box2" type="checkbox"&gt; Choice 2 &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="form-row"&gt;
+    &lt;label class="block-label" for="box3"&gt;&lt;input class="input-inline" id="box3" type="checkbox"&gt; Choice 3 &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
               </article>
 
               <article class="column medium-7 margin-bh">
@@ -213,40 +221,51 @@
                   <fieldset>
                     <legend>Select Gender</legend>
                     <div class="form-row">
-                      <input type="radio" name="gender" value="male">
-                      <label>Male</label>
+                      <input id="basic-radio-example-male" type="radio" name="gender" value="male">
+                      <label for="basic-radio-example-male">Male</label>
                     </div>
                     <div class="form-row">
-                      <input type="radio" name="gender" value="female">
-                      <label >Female</label>
+                      <input id="basic-radio-example-male" type="radio" name="gender" value="female">
+                      <label for="basic-radio-example-female">Female</label>
                     </div>
                   </fieldset>
                 </div>
-                <pre>
-
-
-                </pre>
+                <pre>&lt;fieldset&gt;
+  &lt;legend&gt;Select Gender&lt;/legend&gt;
+  &lt;div class="form-row"&gt;
+    &lt;input id="basic-radio-example-male" type="radio" name="gender" value="male"&gt;
+    &lt;label for="basic-radio-example-male"&gt;Male&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="form-row"&gt;
+    &lt;input id="basic-radio-example-male" type="radio" name="gender" value="female"&gt;
+    &lt;label for="basic-radio-example-female"&gt;Female&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
               </article>
 
 
               <article class="column medium-7 margin-bh">
-                <h4 id="selection-radio"><span class="example-heading">Radio buttons inline</span></h4>
+                <h4 id="selection-radio-inilne"><span class="example-heading">Radio buttons inline</span></h4>
                 <div class="example-panel">
                   <fieldset>
                     <legend>Select Gender</legend>
                     <div class="form-row">
-                      <input  type="radio" name="gender" value="male">
-                      <label >Male</label>
-                      <input  type="radio" name="gender" value="female">
-                      <label >Female</label>
+                      <input id="inline-radio-example-male" type="radio" name="gender" value="male">
+                      <label for="inline-radio-example-male">Male</label>
+                      <input id="inline-radio-example-female"  type="radio" name="gender" value="female">
+                      <label for="inline-radio-example-male">Female</label>
                     </div>
                   </fieldset>
-
                 </div>
-                <pre>
-
-                </pre>
-
+                <pre>&lt;fieldset&gt;
+  &lt;legend&gt;Select Gender&lt;/legend&gt;
+  &lt;div class="form-row"&gt;
+    &lt;input id="inline-radio-example-male" type="radio" name="gender" value="male"&gt;
+    &lt;label for="inline-radio-example-male"&gt;Male&lt;/label&gt;
+    &lt;input id="inline-radio-example-female"  type="radio" name="gender" value="female"&gt;
+    &lt;label for="inline-radio-example-male"&gt;Female&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
               </article>
 
 
@@ -295,9 +314,15 @@
                     </select>
                   </div>
                 </div>
-                <pre>
-
-                </pre>
+                <pre>&lt;div class="form-row"&gt;
+  &lt;label for="select-example"&gt;Select an option&lt;/label&gt;
+  &lt;select id="select-example" name="select-example"&gt;
+    &lt;option value="1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="3"&gt;Option 3&lt;/option&gt;
+    &lt;option value="4"&gt;Option 4&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</pre>
               </article>
 
               <article id="selection-tap" class="column medium-7 ">
@@ -321,23 +346,17 @@
               </article>
 
 
-              <article id="selection-dropdown" class="column medium-7 margin-bh">
-                <h4 id="selection-checkbox"><span class="example-heading">Select dropdown</span></h4>
+<!--               <article id="selection-datalist" class="column medium-7 margin-bh">
+                <h4 id="selection-datalist"><span class="example-heading">Datalists </span></h4>
                 <div class="example-panel">
                   <div class="form-row">
-                    <label for="select-example">Select an option</label>
-                    <select id="select-example" name="select-example">
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                      <option value="4">Option 4</option>
-                    </select>
+
                   </div>
                 </div>
                 <pre>
 
                 </pre>
-              </article>
+              </article> -->
 
               <footer>
                 <a href="#form-elements">Back to top</a>
@@ -399,32 +418,45 @@
               <article id="" class="column medium-7 margin-bh">
                 <h4 id="dob-form"><span class="example-heading">Date of birth input <small>(using the grid to set input&nbsp;widths)</small></span></h4>
                 <div class="example-panel">
-                  <form>
-                    <fieldset class="dob-fields">
-                      <legend>Please enter your date of birth</legend>
-                      <div class="form-row">
-                        <div class="row">
-                          <div class="column xsmall-4 small-2 medium-3 large-2">
-                            <label for="dob-date">Date</label>
-                            <input id="dob-date" type="text"  maxlength="2" size="2" value="" placeholder="DD" pattern="[0-9]*">
-                          </div>
-                          <div class="column xsmall-4 small-2 medium-3 large-2">
-                            <label for="dob-month">Month</label>
-                            <input id="dob-month" type="text"  maxlength="3" size="3" value="" placeholder="MM" pattern="[0-9]*">
-                          </div>
-                          <div class="column xsmall-4 small-3 medium-4 large-3">
-                            <label for="dob-year">Year</label>
-                            <input id="dob-year" type="text"  maxlength="4" size="4" value="" placeholder="YYYY" pattern="[0-9]*">
-                          </div>
+                  <fieldset class="dob-fields">
+                    <legend>Please enter your date of birth</legend>
+                    <div class="form-row">
+                      <div class="row">
+                        <div class="column xsmall-4 small-2 medium-3 large-2">
+                          <label for="dob-date">Date</label>
+                          <input id="dob-date" type="text"  maxlength="2" size="2" value="" placeholder="DD" pattern="[0-9]*">
+                        </div>
+                        <div class="column xsmall-4 small-2 medium-3 large-2">
+                          <label for="dob-month">Month</label>
+                          <input id="dob-month" type="text"  maxlength="3" size="3" value="" placeholder="MM" pattern="[0-9]*">
+                        </div>
+                        <div class="column xsmall-4 small-3 medium-4 large-3">
+                          <label for="dob-year">Year</label>
+                          <input id="dob-year" type="text"  maxlength="4" size="4" value="" placeholder="YYYY" pattern="[0-9]*">
                         </div>
                       </div>
-                    </fieldset>
-                  </form>
+                    </div>
+                  </fieldset>
                 </div>
-                <pre>
-
-
-                </pre>
+                <pre>&lt;fieldset class="dob-fields"&gt;
+  &lt;legend&gt;Please enter your date of birth&lt;/legend&gt;
+  &lt;div class="form-row"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="column xsmall-4 small-2 medium-3 large-2"&gt;
+        &lt;label for="dob-date"&gt;Date&lt;/label&gt;
+        &lt;input id="dob-date" type="text"  maxlength="2" size="2" value="" placeholder="DD" pattern="[0-9]*"&gt;
+      &lt;/div&gt;
+      &lt;div class="column xsmall-4 small-2 medium-3 large-2"&gt;
+        &lt;label for="dob-month"&gt;Month&lt;/label&gt;
+        &lt;input id="dob-month" type="text"  maxlength="3" size="3" value="" placeholder="MM" pattern="[0-9]*"&gt;
+      &lt;/div&gt;
+      &lt;div class="column xsmall-4 small-3 medium-4 large-3"&gt;
+        &lt;label for="dob-year"&gt;Year&lt;/label&gt;
+        &lt;input id="dob-year" type="text"  maxlength="4" size="4" value="" placeholder="YYYY" pattern="[0-9]*"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
               </article>
 
               <!-- INSERT HERE DateOfBirth - adpative input widths e.g. wills.coop.uk d.o.b fields-->
@@ -466,10 +498,33 @@
                     </div>
                   </form>
                 </div>
-                <pre>
-
-
-                </pre>
+                <pre>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;div class="form-row"&gt;
+      &lt;label for="addr1-example"&gt;Address 1&lt;/label&gt;
+      &lt;input id="addr1-example" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+      &lt;label for="addr2-example"&gt;Address 2&lt;/label&gt;
+      &lt;input id="addr2-example" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+      &lt;label for="town-example"&gt;Town&lt;/label&gt;
+      &lt;input id="town-example" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+      &lt;label for="country-example"&gt;County&lt;/label&gt;
+      &lt;input id="country-example" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+      &lt;label for="postcode-example" &gt;Postcode&lt;/label&gt;
+      &lt;input class="small-5" id="postcode-example" type="text"&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;div class="form-row"&gt;
+    &lt;a class="btn btn-primary"&gt;Submit&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
               </article>
 
 
@@ -479,14 +534,14 @@
                   <form>
                     <div class="form-row">
                       <label for="feedback-text-example">Tell us what's wrong</label>
-                      <textarea name="" id="feedback-text-example column medium-7" cols="20" rows="4"></textarea>
+                      <textarea name="feedback-text-example" id="feedback-text-example column medium-7" cols="20" rows="4"></textarea>
                     </div>
                     <div class="form-row">
                       <input class="btn btn-primary column small-4" type="submit" value="Send">
                     </div>
                   </form>
                 </div>
-                <pre>&lt;form action=""&gt;
+                <pre>&lt;form&gt;
   &lt;div class="form-row"&gt;
     &lt;label for="feedback-text-example"&gt;&lt;/label&gt;
     &lt;textarea name="" id="feedback-text-example" cols="30" rows="4"&gt;&lt;/textarea&gt;
@@ -512,8 +567,8 @@
                 <pre>&lt;form class="search-form"&gt;
   &lt;div class="form-row"&gt;
     &lt;label for="search-example" class="visuallyhidden" aria-role="hidden"&gt;Enter a search term&lt;/label&gt;
-    &lt;input id="search-example" type="text" placeholder="enter search term"&gt;
-    &lt;button&gt;Search&lt;/button&gt;
+    &lt;input id="search-example" type="text" placeholder="Enter a search term"&gt;
+    &lt;button href="#" class="btn btn-primary"&gt;Search&lt;/button&gt;
   &lt;/div&gt;
 &lt;/form&gt;</pre>
               </article>
@@ -549,10 +604,12 @@
       &lt;input id="signup-email-example" type="email"&gt;
       &lt;button class="btn btn-primary"&gt;Subscribe&lt;/button&gt;
     &lt;/div&gt;
+
     &lt;div class="form-row"&gt;
       &lt;input id="agree-example" class="input-inline" type="checkbox"&gt;
-      &lt;label for="agree-example" style="display:inline-block"&gt;&lt;small&gt;I would like to receive updates from other co-op services&lt;/small&gt;&lt;/label&gt;
+      &lt;label for="agree-example"&gt;I would like to receive updates from other co-op services&lt;/label&gt;
     &lt;/div&gt;
+
  &lt;/fieldset&gt;
 &lt;/form&gt;</pre>
               </article>
@@ -563,6 +620,13 @@
 
 
 
+<!--
+• just an experiment with css only toggle using radio buttons or checkboxes
+• elements must be put in this order input + label + div.input-toggle-content
+• elements are targeted by:
+                          input[type=radio]+label+.input-toggle-content &&
+                          input[type=radio]:checked+label+.input-toggle-content
+• css for this toggle can be found and improved upon in getting-started.css
 
           <section>
             <article id="radio-toggle" class="column medium-7 ">
@@ -610,15 +674,13 @@
                           </div>
                         </div>
                     </fieldset>
-
                 </div>
                 <pre>
 
 
                 </pre>
               </article>
-
-          </section>
+          </section> -->
 
         </main>
 
