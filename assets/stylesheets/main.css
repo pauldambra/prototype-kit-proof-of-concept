@@ -2454,32 +2454,53 @@ Links mixins - Co-op Front-end Toolkit
 a {
   color: #00729a;
   border-bottom: 0.075em solid #00729a;
-  text-decoration: none; }
-  a:hover {
-    color: #00729a; }
-  a:active, a:focus {
-    transition: none;
-    outline: 4px solid #00a1cc; }
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00394e;
+  border-color: #00394e;
+}
+
+a:active, a:focus {
+  -webkit-transition: none;
+  transition: none;
+  outline: 4px solid #00a1cc;
+}
 
 .link-white {
   color: #ffffff;
   border-bottom: 0.075em solid #ffffff;
-  text-decoration: none; }
-  .link-white:hover {
-    color: #ffffff; }
-  .link-white:active, .link-white:focus {
-    transition: none;
-    outline: 4px solid #00a1cc; }
+  text-decoration: none;
+}
+
+.link-white:hover {
+  color: #d9d9d9;
+  border-color: #d9d9d9;
+}
+
+.link-white:active, .link-white:focus {
+  -webkit-transition: none;
+  transition: none;
+  outline: 4px solid #00a1cc;
+}
 
 .link-black {
   color: #282828;
   border-bottom: 0.075em solid #282828;
-  text-decoration: none; }
-  .link-black:hover {
-    color: #282828; }
-  .link-black:active, .link-black:focus {
-    transition: none;
-    outline: 4px solid #00a1cc; }
+  text-decoration: none;
+}
+
+.link-black:hover {
+  color: #020202;
+  border-color: #020202;
+}
+
+.link-black:active, .link-black:focus {
+  -webkit-transition: none;
+  transition: none;
+  outline: 4px solid #00a1cc;
+}
 
 /*===============================================
 Lists - Co-op Front-end Toolkit
@@ -2524,10 +2545,12 @@ Lists mixins - Co-op Front-end Toolkit
 ul, ol {
   margin-bottom: 32px; }
 
-p + ul {
+p + ul,
+p + ol {
   margin-top: -8px; }
   @media (min-width: 750px) {
-    p + ul {
+    p + ul,
+    p + ol {
       margin-top: -16px; } }
 
 .undecorated-list,
@@ -3492,7 +3515,7 @@ Variables - Co-op Front-end Toolkit
 
 button,
 .btn {
-  font-size: 1em;
+  font-size: 20px;
   font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   padding: 16px 40px;
@@ -3508,7 +3531,7 @@ button,
   @media (min-width: 750px) {
     button,
     .btn {
-      font-size: 1.25em; } }
+      font-size: 20px; } }
   button:hover,
   .btn:hover, button:focus,
   .btn:focus {
