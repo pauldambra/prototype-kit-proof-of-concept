@@ -39,8 +39,7 @@
                                 <h2 id="getting-started">Getting started</h2>
                                 <p>You will need a text editor to work with the prototype kit. We recommend the <a href="https://atom.io">Atom text editor</a>. It's free and works on both Mac and Windows.</p>
                                 <h3>Introducing Atom</h3>
-                                <p>
-                                    Atom has a useful ‘Get to know Atom’ section when you
+                                <p>Atom has a useful ‘Get to know Atom’ section when you
                                     first open it up. It is recommended you read these steps
                                     to get you set up and familiar working in the Atom
                                     environment. There are some parts of the setup that
@@ -48,8 +47,7 @@
                                     these if you don’t feel comfortable with them yet.
                                     It will not effect your workflow on this project.
                                     However, it is recommended that you complete the
-                                    ‘Open your project’ tab.
-                                </p>
+                                    ‘Open your project’ tab.</p>
                                 <h3>Open your project in Atom</h3>
                                 <ol>
                                   <li>Open Atom.</li>
@@ -86,7 +84,7 @@
                                 <h3 id="basic-typography-examples">Typography</h3>
                                 <p>Headings and paragraphs are the best way to give a page hierarchy. Our headings are:</p>
                                 <h3><span class="example-heading">Example</span> Headings</h3>
-                                <article class="example">
+                                <div class="example">
                                     <div class="example_content">
                                         <h1>Heading 1</h1>
                                         <h2>Heading 2</h2>
@@ -104,9 +102,9 @@
 &#x3C;h5&#x3E;Heading 5&#x3C;/h5&#x3E;
 &#x3C;h6&#x3E;Heading 6&#x3C;/h6&#x3E;
                                     </pre>
-                                </article>
+                                </div>
                                 <h3><span class="example-heading">Example</span> Headings styled to look like other headings</h3>
-                                <article class="example">
+                                <div class="example">
                                     <div class="example_content">
                                         <h1 class="h6">Heading 1 styled to look like heading 6</h1>
                                         <h1 class="h5">Heading 1 styled to look like heading 5</h1>
@@ -124,11 +122,11 @@
 &#x3C;h1 class=&#x22;h2&#x22;&#x3E;Heading 1 styled to look like heading 2&#x3C;/h1&#x3E;
 &#x3C;h6 class=&#x22;h1&#x22;&#x3E;Heading 6 styled to look like heading 1&#x3C;/h6&#x3E;
                                     </pre>
-                                </article>
+                                </div>
                                 <h3><span class="example-heading">Example</span> Paragraphs, links and lists</h3>
-                                <article class="example">
+                                <div class="example">
                                     <div class="example_content">
-                                        <p>paragraph and a <a href="index.html">link to the homepage</a>.</p>
+                                        <p>Paragraph and a <a href="index.html">link to the homepage</a>.</p>
                                         <p>An unordered list:</p>
                                         <ul>
                                             <li>list item</li>
@@ -158,9 +156,9 @@
 &#x3C;li&#x3E;Do this third.&#x3C;/li&#x3E;
 &#x3C;/ol&#x3E;
                                     </pre>
-                                </article>
+                                </div>
                                 <h3><span class="example-heading">Example</span> Buttons</h3>
-                                <article class="example">
+                                <div class="example">
                                     <div class="example_content">
                                         <p><a href="my-page.html" class="btn btn-primary">Continue</a></p>
                                         <p><a href="my-page.html" class="btn btn-primary-dark">Save</a></p>
@@ -170,10 +168,10 @@
 &#x3C;a href=&#x22;my-page.html&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;Continue&#x3C;/a&#x3E;
 &#x3C;a href=&#x22;my-page.html&#x22; class=&#x22;btn btn-primary-dark&#x22;&#x3E;Save&#x3C;/a&#x3E;
                                     </pre>
-                                </article>
+                                </div>
                                 <h2 id="basic-form-examples">Form examples</h2>
                                 <h3 id="basic-form"><span class="example-heading">Example</span> Basic form</h3>
-                                <article class="example">
+                                <div class="example">
                                     <div class="example_content">
                                         <form>
                                             <fieldset>
@@ -186,7 +184,7 @@
                                                     <input type="email" id="email">
                                                 </div>
                                                 <div class="form-row">
-                                                    <a href="#basic-form" class="btn btn-primary">Submit</a>
+                                                    <a href="link-to-a-page-to-fake-a-form.html" class="btn btn-primary">Submit</a>
                                                 </div>
                                             </fieldset>
                                         </form>
@@ -209,7 +207,105 @@
 &lt;/fieldset&gt;
 &lt;/form&gt;
                                     </pre>
-                                </article>
+                                </div>
+                                <h3 id="advanced-form"><span class="example-heading">Example</span> More advanced form</h3>
+                                <div class="example">
+                                    <div class="example_content">
+                                        <form>
+                                            <fieldset class="margin-bh">
+                                                <div class="form-row">
+                                                    <label for="name">Your full name</label>
+                                                    <input type="text" id="name">
+                                                </div>
+                                                <div class="form-row">
+                                                    <label for="email">Your email address</label>
+                                                    <input type="email" id="email">
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="margin-bh">
+                                                <legend>Do you own:</legend>
+                                                <label class="block-label">
+                                                    <input type="checkbox" value="1" name="animal-ownership">a Dog
+                                                </label>
+                                                <label class="block-label">
+                                                    <input type="checkbox" value="2" name="animal-ownership">a Cat
+                                                </label>
+                                                <label class="block-label">
+                                                    <input type="checkbox" value="3" name="animal-ownership">a Rabbit
+                                                </label>
+                                                <label class="block-label">
+                                                    <input type="checkbox" value="4" name="animal-ownership">an Elephant
+                                                </label>
+                                            </fieldset>
+                                            <fieldset class="margin-bh">
+                                                <legend>Which to you prefer:</legend>
+                                                <label class="block-label">
+                                                    <input type="radio" value="1" name="animal-prefs">Dogs
+                                                </label>
+                                                <label class="block-label">
+                                                    <input type="radio" value="2" name="animal-prefs">Cats
+                                                </label>
+                                                <label class="block-label">
+                                                    <input type="radio" value="1" name="animal-prefs">Rabbits
+                                                </label>
+                                                <label class="block-label">
+                                                    <input type="radio" value="2" name="animal-prefs">Elephants
+                                                </label>
+                                            </fieldset>
+                                            <div class="form-row">
+                                                <a href="link-to-a-page-to-fake-a-form.html" class="btn btn-primary">Submit</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <h4 class="example-heading">Code for this form</h4>
+                                    <pre class="code">
+&#x3C;form&#x3E;
+    &#x3C;fieldset class=&#x22;margin-bh&#x22;&#x3E;
+        &#x3C;div class=&#x22;form-row&#x22;&#x3E;
+            &#x3C;label for=&#x22;name&#x22;&#x3E;Your full name&#x3C;/label&#x3E;
+            &#x3C;input type=&#x22;text&#x22; id=&#x22;name&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;form-row&#x22;&#x3E;
+            &#x3C;label for=&#x22;email&#x22;&#x3E;Your email address&#x3C;/label&#x3E;
+            &#x3C;input type=&#x22;email&#x22; id=&#x22;email&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/fieldset&#x3E;
+    &#x3C;fieldset class=&#x22;margin-bh&#x22;&#x3E;
+        &#x3C;legend&#x3E;Do you own:&#x3C;/legend&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;1&#x22; name=&#x22;animal-ownership&#x22;&#x3E;a Dog
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;2&#x22; name=&#x22;animal-ownership&#x22;&#x3E;a Cat
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;3&#x22; name=&#x22;animal-ownership&#x22;&#x3E;a Rabbit
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;4&#x22; name=&#x22;animal-ownership&#x22;&#x3E;an Elephant
+        &#x3C;/label&#x3E;
+    &#x3C;/fieldset&#x3E;
+    &#x3C;fieldset class=&#x22;margin-bh&#x22;&#x3E;
+        &#x3C;legend&#x3E;Which to you prefer:&#x3C;/legend&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;radio&#x22; value=&#x22;1&#x22; name=&#x22;animal-prefs&#x22;&#x3E;Dogs
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;radio&#x22; value=&#x22;2&#x22; name=&#x22;animal-prefs&#x22;&#x3E;Cats
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;radio&#x22; value=&#x22;1&#x22; name=&#x22;animal-prefs&#x22;&#x3E;Rabbits
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;block-label&#x22;&#x3E;
+            &#x3C;input type=&#x22;radio&#x22; value=&#x22;2&#x22; name=&#x22;animal-prefs&#x22;&#x3E;Elephants
+        &#x3C;/label&#x3E;
+    &#x3C;/fieldset&#x3E;
+    &#x3C;div class=&#x22;form-row&#x22;&#x3E;
+        &#x3C;a href=&#x22;#basic-form&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;Submit&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/form&#x3E;
+                                    </pre>
+                                </div>
                             </section>
                             <section>
                                 <h2 id="custom-styles">Custom styles</h2>
@@ -217,7 +313,7 @@
                             </section>
                             <section>
                                 <h2 id="publishing-on-the-web">Publishing on the web</h2>
-                                <p>We are currently looking at the best way to allow publishing of this prototyping kit to the internet. If this is something you need to do, consider using our more <a href="https://github.com/coopdigital/coop-prototyping-kit">advanced prototyping toolkit</a> or contact <a href="mailto:design@coopdigital.co.uk">design@coopdigital.co.uk</a>.</p>
+                                <p>We are currently looking at the best way to allow publishing of this prototyping kit to the internet. If this is something you need to do ask an Engineer on your serivice team or consider using our more <a href="https://github.com/coopdigital/coop-prototyping-kit">advanced prototyping toolkit</a> or contact <a href="mailto:design@coopdigital.co.uk">design@coopdigital.co.uk</a>.</p>
                             </section>
                         </div>
                     </div>
@@ -225,5 +321,8 @@
             </main>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/javascript/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+    <script src="assets/javascript/main.js"></script>
 </body>
 </html>
